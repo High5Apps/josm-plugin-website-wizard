@@ -26,6 +26,7 @@
     <property name="plugin.description" value="Add website tag to places as easily as possible"/>
     <property name="plugin.icon" value="images/websitewizard.svg"/>
     <property name="plugin.link" value="..."/>
+    <property name="plugin.canloadatruntime" value="true"/>
     <!--<property name="plugin.early" value="..."/>-->
     <!--<property name="plugin.requires" value="..."/>-->
     <!--<property name="plugin.stage" value="..."/>-->
