@@ -11,7 +11,7 @@
 ** Call "ant help" to get possible build targets.
 **
 -->
-<project name="websitewizard" default="dist" basedir=".">
+<project name="WebsiteWizard" default="dist" basedir=".">
 
     <!-- enter the SVN commit message -->
     <property name="commit.message" value="Commit message"/>
@@ -21,10 +21,10 @@
     <!-- Configure these properties (replace "..." accordingly).
          See https://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins
     -->
-    <property name="plugin.author" value="..."/>
+    <property name="plugin.author" value="goliath_jr"/>
     <property name="plugin.class" value="org.openstreetmap.josm.plugins.websitewizard.WebsiteWizardPlugin"/>
-    <property name="plugin.description" value="Helps add website tags to OSM features via DuckDuckGo search"/>
-    <property name="plugin.icon" value="..."/>
+    <property name="plugin.description" value="Add website tag to places as easily as possible"/>
+    <property name="plugin.icon" value="images/dialogs/websitewizard.png"/>
     <property name="plugin.link" value="..."/>
     <!--<property name="plugin.early" value="..."/>-->
     <!--<property name="plugin.requires" value="..."/>-->
