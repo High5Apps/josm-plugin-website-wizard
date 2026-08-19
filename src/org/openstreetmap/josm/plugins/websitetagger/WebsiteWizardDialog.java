@@ -125,7 +125,7 @@ public class WebsiteWizardDialog extends ToggleDialog {
             String duckDuckGoUrl = "https://duckduckgo.com/?q=" + encodedQuery;
             
             Desktop.getDesktop().browse(new URI(duckDuckGoUrl));
-            statusLabel.setText("Opened DuckDuckGo search for: " + searchQuery);
+            statusLabel.setText("Searched for: " + searchQuery);
             statusLabel.setForeground(new Color(0, 100, 0));
         } catch (Exception e) {
             statusLabel.setText("Error: " + e.getMessage());
@@ -155,7 +155,7 @@ public class WebsiteWizardDialog extends ToggleDialog {
                 ChangePropertyCommand command = new ChangePropertyCommand(selected, "website", url);
                 UndoRedoHandler.getInstance().add(command);
 
-                statusLabel.setText("Website tag set: " + url);
+                statusLabel.setText("Set website: " + url);
                 statusLabel.setForeground(new Color(0, 100, 0));
                 websiteUrlField.setText("");
             } catch (Exception e) {
