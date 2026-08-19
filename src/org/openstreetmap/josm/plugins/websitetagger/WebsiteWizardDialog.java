@@ -120,7 +120,8 @@ public class WebsiteWizardDialog extends ToggleDialog {
         }
         
         try {
-            String searchQuery = prefix + " " + name;
+            boolean startsWithPrefix = name.toLowerCase().startsWith(prefix.toLowerCase());
+            String searchQuery = startsWithPrefix ? name : prefix + " " + name;
             String encodedQuery = URLEncoder.encode(searchQuery, StandardCharsets.UTF_8);
             String duckDuckGoUrl = "https://duckduckgo.com/?q=" + encodedQuery;
             
