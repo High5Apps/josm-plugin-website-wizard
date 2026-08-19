@@ -27,7 +27,7 @@ public class WebsiteHelperDialog extends ToggleDialog {
     private final JLabel statusLabel;
     
     public WebsiteHelperDialog() {
-        super("Website Helper", "websitehelper", "Tool to add website tags to OSM features", null, 150);
+        super("Website Helper", "websitehelper", "Tool to add website tags to OSM features", null, 100);
         
         // Create main panel
         JPanel mainPanel = new JPanel();
@@ -45,14 +45,13 @@ public class WebsiteHelperDialog extends ToggleDialog {
         gbc.gridx = 1;
         gbc.weightx = 1;
         searchPrefixField = new DisableShortcutsOnFocusGainedTextField(15);
-        searchPrefixField.setToolTipText("e.g., 'site:' or custom text to prepend");
+        searchPrefixField.setToolTipText("City and/or neighborhood");
         mainPanel.add(searchPrefixField, gbc);
         
         // Search Button
-        gbc.gridx = 0;
-        gbc.gridy = 1;
-        gbc.gridwidth = 2;
-        searchButton = new JButton("Search DuckDuckGo");
+        gbc.gridx = 2;
+        gbc.weightx = 0;
+        searchButton = new JButton("Search");
         searchButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -63,22 +62,20 @@ public class WebsiteHelperDialog extends ToggleDialog {
         
         // Website URL Label & Field
         gbc.gridx = 0;
-        gbc.gridy = 2;
-        gbc.gridwidth = 1;
+        gbc.gridy = 1;
         gbc.weightx = 0;
         mainPanel.add(new JLabel("Website URL:"), gbc);
         
         gbc.gridx = 1;
         gbc.weightx = 1;
         websiteUrlField = new DisableShortcutsOnFocusGainedTextField(15);
-        websiteUrlField.setToolTipText("Paste or enter the website URL");
+        websiteUrlField.setToolTipText("Paste the website URL here");
         mainPanel.add(websiteUrlField, gbc);
         
         // Set Tag Button
-        gbc.gridx = 0;
-        gbc.gridy = 3;
-        gbc.gridwidth = 2;
-        setTagButton = new JButton("Set website= Tag");
+        gbc.gridx = 2;
+        gbc.weightx = 0;
+        setTagButton = new JButton("Save");
         setTagButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -89,15 +86,17 @@ public class WebsiteHelperDialog extends ToggleDialog {
         
         // Status Label
         gbc.gridx = 0;
-        gbc.gridy = 4;
-        gbc.gridwidth = 2;
+        gbc.gridy = 3;
+        gbc.gridwidth = 3;
+        gbc.anchor = GridBagConstraints.CENTER;
         statusLabel = new JLabel("Ready");
         statusLabel.setForeground(new Color(0, 100, 0));
+        statusLabel.setHorizontalAlignment(JLabel.CENTER);
         mainPanel.add(statusLabel, gbc);
         
         // Add padding at bottom
         gbc.gridx = 0;
-        gbc.gridy = 5;
+        gbc.gridy = 4;
         gbc.weighty = 1;
         mainPanel.add(Box.createVerticalGlue(), gbc);
         
