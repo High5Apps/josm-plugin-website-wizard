@@ -27,13 +27,12 @@ public class WebsiteWizardDialog extends ToggleDialog {
     private final JLabel statusLabel;
     
     public WebsiteWizardDialog() {
-        super("Website Wizard", "websitewizard", "Tool to add website tags to OSM features", null, 100);
+        super("Website Wizard", "websitewizard", "Tool to add website tags to OSM features", null, 135);
         
         // Create main panel
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(5, 5, 5, 5);
         gbc.fill = GridBagConstraints.HORIZONTAL;
         
         // Search Prefix Label & Field
