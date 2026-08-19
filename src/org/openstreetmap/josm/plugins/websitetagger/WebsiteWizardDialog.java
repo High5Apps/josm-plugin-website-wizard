@@ -1,4 +1,4 @@
-package org.openstreetmap.josm.plugins.websitehelper;
+package org.openstreetmap.josm.plugins.websitewizard;
 
 import org.openstreetmap.josm.gui.dialogs.ToggleDialog;
 import org.openstreetmap.josm.gui.MainApplication;
@@ -18,7 +18,7 @@ import org.openstreetmap.josm.data.UndoRedoHandler;
 import org.openstreetmap.josm.gui.util.GuiHelper;
 import org.openstreetmap.josm.gui.widgets.DisableShortcutsOnFocusGainedTextField;
 
-public class WebsiteHelperDialog extends ToggleDialog {
+public class WebsiteWizardDialog extends ToggleDialog {
     
     private final DisableShortcutsOnFocusGainedTextField searchPrefixField;
     private final DisableShortcutsOnFocusGainedTextField websiteUrlField;
@@ -26,8 +26,8 @@ public class WebsiteHelperDialog extends ToggleDialog {
     private final JButton setTagButton;
     private final JLabel statusLabel;
     
-    public WebsiteHelperDialog() {
-        super("Website Helper", "websitehelper", "Tool to add website tags to OSM features", null, 100);
+    public WebsiteWizardDialog() {
+        super("Website Wizard", "websitewizard", "Tool to add website tags to OSM features", null, 100);
         
         // Create main panel
         JPanel mainPanel = new JPanel();

@@ -11,7 +11,7 @@
 ** Call "ant help" to get possible build targets.
 **
 -->
-<project name="websitehelper" default="dist" basedir=".">
+<project name="websitewizard" default="dist" basedir=".">
 
     <!-- enter the SVN commit message -->
     <property name="commit.message" value="Commit message"/>
@@ -22,7 +22,7 @@
          See https://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins
     -->
     <property name="plugin.author" value="..."/>
-    <property name="plugin.class" value="org.openstreetmap.josm.plugins.websitehelper.WebsiteHelperPlugin"/>
+    <property name="plugin.class" value="org.openstreetmap.josm.plugins.websitewizard.WebsiteWizardPlugin"/>
     <property name="plugin.description" value="Helps add website tags to OSM features via DuckDuckGo search"/>
     <property name="plugin.icon" value="..."/>
     <property name="plugin.link" value="..."/>
