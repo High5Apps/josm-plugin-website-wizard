@@ -3,6 +3,7 @@ package org.openstreetmap.josm.plugins.websitewizard;
 import org.openstreetmap.josm.gui.dialogs.ToggleDialog;
 import org.openstreetmap.josm.gui.MainApplication;
 import org.openstreetmap.josm.data.osm.OsmPrimitive;
+import org.openstreetmap.josm.spi.preferences.Config;
 
 import javax.swing.*;
 import java.awt.*;
@@ -54,7 +55,7 @@ public class WebsiteWizardDialog extends ToggleDialog {
         searchButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                searchDuckDuckGo();
+                search();
             }
         });
         mainPanel.add(searchButton, gbc);
@@ -102,7 +103,7 @@ public class WebsiteWizardDialog extends ToggleDialog {
         createLayout(mainPanel, false, null);
     }
     
-    private void searchDuckDuckGo() {
+    private void search() {
         String prefix = searchPrefixField.getText().trim();
         OsmPrimitive selected = getSelectedOsmObject();
         
@@ -123,9 +124,10 @@ public class WebsiteWizardDialog extends ToggleDialog {
             boolean startsWithPrefix = name.toLowerCase().startsWith(prefix.toLowerCase());
             String searchQuery = startsWithPrefix ? name : prefix + " " + name;
             String encodedQuery = URLEncoder.encode(searchQuery, StandardCharsets.UTF_8);
-            String duckDuckGoUrl = "https://duckduckgo.com/?q=" + encodedQuery;
+            String searchProviderUrlPrefix = Config.getPref().get("websitewizard.search-provider-url-prefix", "https://duckduckgo.com/?q=");
+            String searchUrl = searchProviderUrlPrefix + encodedQuery;
             
-            Desktop.getDesktop().browse(new URI(duckDuckGoUrl));
+            Desktop.getDesktop().browse(new URI(searchUrl));
             statusLabel.setText("Searched for: " + searchQuery);
             statusLabel.setForeground(new Color(0, 100, 0));
         } catch (Exception e) {
