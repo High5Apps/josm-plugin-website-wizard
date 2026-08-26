@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.openstreetmap.josm.plugins.websitewizard","l":"WebsiteWizardDialog"},{"p":"org.openstreetmap.josm.plugins.websitewizard","l":"WebsiteWizardPlugin"}];updateSearchResults();
