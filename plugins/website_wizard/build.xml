@@ -23,9 +23,9 @@
     -->
     <property name="plugin.author" value="goliath_jr"/>
     <property name="plugin.class" value="org.openstreetmap.josm.plugins.websitewizard.WebsiteWizardPlugin"/>
-    <property name="plugin.description" value="Add website tag to places as easily as possible"/>
+    <property name="plugin.description" value="Add website tag to places as easily as possible."/>
     <property name="plugin.icon" value="images/websitewizard.svg"/>
-    <property name="plugin.link" value="..."/>
+    <property name="plugin.link" value="https://github.com/High5Apps/josm-plugin-website-wizard"/>
     <property name="plugin.canloadatruntime" value="true"/>
     <!--<property name="plugin.early" value="..."/>-->
     <!--<property name="plugin.requires" value="..."/>-->
