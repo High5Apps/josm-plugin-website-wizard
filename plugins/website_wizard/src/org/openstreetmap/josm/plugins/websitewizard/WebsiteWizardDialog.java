@@ -89,10 +89,10 @@ public class WebsiteWizardDialog extends ToggleDialog {
         gbc.gridy = 3;
         gbc.gridwidth = 3;
         gbc.anchor = GridBagConstraints.CENTER;
-        statusLabel = new JLabel("Ready");
-        statusLabel.setForeground(new Color(0, 100, 0));
+        statusLabel = new JLabel();
         statusLabel.setHorizontalAlignment(JLabel.CENTER);
         mainPanel.add(statusLabel, gbc);
+        setInfoMessage("Ready");
         
         // Add padding at bottom
         gbc.gridx = 0;
@@ -108,15 +108,13 @@ public class WebsiteWizardDialog extends ToggleDialog {
         OsmPrimitive selected = getSelectedOsmObject();
         
         if (selected == null) {
-            statusLabel.setText("Error: No OSM object selected");
-            statusLabel.setForeground(Color.RED);
+            setErrorMessage("No OSM object selected");
             return;
         }
         
         String name = selected.get("name");
         if (name == null || name.isEmpty()) {
-            statusLabel.setText("Error: Selected object has no 'name' tag");
-            statusLabel.setForeground(Color.RED);
+            setErrorMessage("Selected object has no 'name' tag");
             return;
         }
         
@@ -128,11 +126,9 @@ public class WebsiteWizardDialog extends ToggleDialog {
             String searchUrl = searchProviderUrlPrefix + encodedQuery;
             
             Desktop.getDesktop().browse(new URI(searchUrl));
-            statusLabel.setText("Searched for: " + searchQuery);
-            statusLabel.setForeground(new Color(0, 100, 0));
+            setInfoMessage("Searched for: " + searchQuery);
         } catch (Exception e) {
-            statusLabel.setText("Error: " + e.getMessage());
-            statusLabel.setForeground(Color.RED);
+            setErrorMessage(e.getMessage());
         }
     }
     
@@ -141,14 +137,12 @@ public class WebsiteWizardDialog extends ToggleDialog {
         OsmPrimitive selected = getSelectedOsmObject();
         
         if (selected == null) {
-            statusLabel.setText("Error: No OSM object selected");
-            statusLabel.setForeground(Color.RED);
+            setErrorMessage("No OSM object selected");
             return;
         }
         
         if (url.isEmpty()) {
-            statusLabel.setText("Error: No URL entered");
-            statusLabel.setForeground(Color.RED);
+            setErrorMessage("No URL entered");
             return;
         }
 
@@ -158,12 +152,10 @@ public class WebsiteWizardDialog extends ToggleDialog {
                 ChangePropertyCommand command = new ChangePropertyCommand(selected, "website", url);
                 UndoRedoHandler.getInstance().add(command);
 
-                statusLabel.setText("Set website: " + url);
-                statusLabel.setForeground(new Color(0, 100, 0));
+                setInfoMessage("Set website: " + url);
                 websiteUrlField.setText("");
             } catch (Exception e) {
-                statusLabel.setText("Error: " + e.getMessage());
-                statusLabel.setForeground(Color.RED);
+                setErrorMessage(e.getMessage());
             }
         });
     }
@@ -176,5 +168,18 @@ public class WebsiteWizardDialog extends ToggleDialog {
         if (selected.isEmpty()) return null;
         
         return selected.iterator().next();
+    }
+
+    private void setInfoMessage(String message) {
+        setMessage(message, new Color(0x006400));
+    }
+
+    private void setErrorMessage(String message) {
+        setMessage("Error: " + message, new Color(0xE60000));
+    }
+
+    private void setMessage(String message, Color color) {
+        statusLabel.setText(message);
+        statusLabel.setForeground(color);
     }
 }
