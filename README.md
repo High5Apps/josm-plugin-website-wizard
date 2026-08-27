@@ -52,6 +52,22 @@ name=* ((amenity=* "addr:housenumber"=*) | (shop=*)) -website=* -"contact:websit
 4. Uncheck **I would like someone to review my edits**
 5. Click **Upload Changes**
 
+## Advanced Settings
+
+### Keys
+- `websitewizard.search-provider-url-prefix`
+    - Default value: `https://duckduckgo.com/?q=`
+    - Change this key to use a different search provider (e.g. `https://bing.com/?q=`)
+
+### How to update Advanced Settings
+1. Open the JOSM [Preferences Dialog](https://josm.openstreetmap.de/wiki/Help/Action/Preferences)
+2. If needed, check the **Expert Mode** checkbox at the bottom left of the Preferences Dialog
+3. On the left side of the Preferences Dialog, scroll down until you see the very last icon, then click it to show the **Advanced Preferences Pane**
+4. In the search box, paste in `websitewizard` to filter to only the preferences for this plugin
+5. Double click the value next to the key that you want to update and type in your preferred value 
+    - If you don't see one of the [Keys](#keys) listed above, click the **+ Add** button, paste the key into the **Key** text field, click **OK**, type your desired value into the **Value** text field, then click **OK**
+6. After you've set your desired value for the key, click **OK** to close the Preferences Dialog
+
 ## Development Setup
 
 1. [Download JOSM](https://josm.eu/wiki/Download) and install it
