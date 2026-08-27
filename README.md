@@ -12,7 +12,7 @@ The United States alone has more than 1 million shops! So if we want to put them
 
 ![Screenshot of the JOSM Website Wizard plugin and a search result in DuckDuckGo](images/screenshot.png)
 
-## Plugin Installation
+## Installation
 
 1. If you haven't already, [install](https://wiki.openstreetmap.org/wiki/JOSM/Installation) and open JOSM
 2. Open the JOSM [Preferences Dialog](https://josm.openstreetmap.de/wiki/Help/Action/Preferences)
@@ -21,7 +21,7 @@ The United States alone has more than 1 million shops! So if we want to put them
 5. Check the **checkbox**
 6. Click **OK** to install it. (There's no need to restart JOSM.)
 
-## Plugin Usage
+## Usage
 
 ### Getting Started
 1. Open JOSM
@@ -93,4 +93,4 @@ ant dist
 ```
 ant install
 ```
-8. Enable and use the plugin by following the [Plugin Usage](#plugin-usage) instructions above
+8. Enable and use the plugin by following the [Usage](#usage) instructions above
