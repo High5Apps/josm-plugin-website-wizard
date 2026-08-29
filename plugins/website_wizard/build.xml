@@ -14,7 +14,7 @@
 <project name="WebsiteWizard" default="dist" basedir=".">
 
     <!-- enter the SVN commit message -->
-    <property name="commit.message" value="Commit message"/>
+    <property name="commit.message" value="Add WebsiteWizard plugin"/>
     <!-- enter the *lowest* JOSM version this plugin is currently compatible with -->
     <property name="plugin.main.version" value="19613"/>
 
@@ -27,9 +27,7 @@
     <property name="plugin.icon" value="images/websitewizard.svg"/>
     <property name="plugin.link" value="https://github.com/High5Apps/josm-plugin-website-wizard"/>
     <property name="plugin.canloadatruntime" value="true"/>
-    <!--<property name="plugin.early" value="..."/>-->
-    <!--<property name="plugin.requires" value="..."/>-->
-    <!--<property name="plugin.stage" value="..."/>-->
+    <property name="plugin.version" value="1.0.0"/>
 
     <!-- ** include targets that all plugins have in common ** -->
     <import file="../build-common.xml"/>
