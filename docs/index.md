@@ -90,7 +90,7 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 
 So what next?
 
-You could keep going and add a website to every place in your AOI. For example, I used Website Wizard to quickly add 56 new websites in Seattle's Greenlake neighborhood in [this changeset](https://www.openstreetmap.org/changeset/187858343).
+You could keep going and add a website to every place in your AOI. For example, I used Website Wizard to quickly add 66 new websites in Seattle's Wallingford neighborhood in [this changeset](https://www.openstreetmap.org/changeset/187858343).
 
 Or you could modify the filter to show places in your AOI with a website but no phone number. Then you could add the `phone` tag based on info from the website.
 
