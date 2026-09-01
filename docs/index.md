@@ -1,4 +1,8 @@
-# Make Your First Contribution to OpenStreetMap in The Next 15 Minutes
+---
+layout: default
+title: Make Your First Contribution to OpenStreetMap in The Next 15 Minutes
+description: Website Wizard JOSM Plugin
+---
 
 ## Intro
 
@@ -20,7 +24,7 @@ Got your stopwatch out? Ready, set, go!
 
 ## 3. Set Up the 🌐 Website Wizard Plugin
 
-![The Plugins panel in JOSM's Preferences panel](images/blog-post/plugin-preferences.png)
+[![The Plugins panel in JOSM's Preferences panel](assets/images/blog-post/plugin-preferences.png)](assets/images/blog-post/plugin-preferences.png)
 
 1. Press `F12` (or `⌘+,` on Mac) to open JOSM's [Preferences](https://josm.openstreetmap.de/wiki/Help/Action/Preferences) dialog
 2. Click the **🧩 puzzle piece** icon on the left side of the window to open the [Plugins](https://josm.openstreetmap.de/wiki/Help/Preferences/Plugins) config
@@ -31,7 +35,7 @@ Got your stopwatch out? Ready, set, go!
 
 ## 4. Download OSM Data
 
-![JOSM's Download panel with an area of interest selected](images/blog-post/download-panel.png)
+[![JOSM's Download panel with an area of interest selected](assets/images/blog-post/download-panel.png)](assets/images/blog-post/download-panel.png)
 
 1. Press `Ctrl+Shift+↓` (or `⌘+Shift+↓` on Mac) to open the [Download](https://josm.openstreetmap.de/wiki/Help/Action/Download) dialog
 2. Determine your area of interest (AOI). It should be somewhere you're familiar with, no larger than a few city blocks.
@@ -41,9 +45,9 @@ Got your stopwatch out? Ready, set, go!
 
 ## 5. Filter Irrelevant OSM Data
 
-![Unfiltered OpenStreetMap data for an area of interest](images/blog-post/unfiltered-aoi.png)
+[![Unfiltered OpenStreetMap data for an area of interest](assets/images/blog-post/unfiltered-aoi.png)](assets/images/blog-post/unfiltered-aoi.png)
 
-![Filtered OpenStreetMap data for an area of interest](images/blog-post/filtered-aoi.png)
+[![Filtered OpenStreetMap data for an area of interest](assets/images/blog-post/filtered-aoi.png)](assets/images/blog-post/filtered-aoi.png)
 
 Now we'll filter the OSM data to only show shops and amenities that don't have a website.
 
@@ -58,7 +62,7 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 
 ## 6. Search For an Official Website
 
-![Website Wizard demo search in the JOSM editor](images/blog-post/website-wizard-search.png)
+[![Website Wizard demo search in the JOSM editor](assets/images/blog-post/website-wizard-search.png)](assets/images/blog-post/website-wizard-search.png)
 
 1. On the bottom right side of the screen, find the 🌐 Website Wizard panel
 2. Type your AOI's city and/or neighborhood into Website Wizard's **Search Prefix** text field
@@ -70,7 +74,7 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 
 ## 7. Upload your changeset
 
-![JOSM's Upload panel with our changeset's info](images/blog-post/upload-panel.png)
+[![JOSM's Upload panel with our changeset's info](assets/images/blog-post/upload-panel.png)](assets/images/blog-post/upload-panel.png)
 
 1. Press `Ctrl+Shift+↑` (or `⌘+Shift+↑` on Mac) to open the [Upload](https://josm.openstreetmap.de/wiki/Help/Action/Upload) dialog
 2. Type `Add website for <city and/or neighborhood> shops and amenities` in the text field labeled **Provide a brief comment...**

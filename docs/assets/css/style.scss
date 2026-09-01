@@ -1,0 +1,13 @@
+---
+---
+@import "{{ site.theme }}";
+
+.project-tagline {
+    display: none !important;
+}
+
+.main-content img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: contain;
+}

@@ -10,7 +10,7 @@ The United States alone has more than 1 million shops! So if we want to put them
 
 ## Screenshots
 
-![Screenshot of the JOSM Website Wizard plugin and a search result in DuckDuckGo](images/demo-screenshot.png)
+![Screenshot of the JOSM Website Wizard plugin and a search result in DuckDuckGo](docs/assets/images/demo-screenshot.png)
 
 ## Installation
 
