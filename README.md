@@ -68,7 +68,9 @@ name=* ((amenity=* "addr:housenumber"=*) | (shop=*)) -website=* -"contact:websit
     - If you don't see one of the [Keys](#keys) listed above, click the **+ Add** button, paste the key into the **Key** text field, click **OK**, type your desired value into the **Value** text field, then click **OK**
 6. After you've set your desired value for the key, click **OK** to close the Preferences Dialog
 
-## Development Setup
+## Development
+
+### Setup
 
 1. [Download JOSM](https://josm.eu/wiki/Download) and install it
 2. Pull the JOSM repo
@@ -94,3 +96,13 @@ ant dist
 ant install
 ```
 8. Enable and use the plugin by following the [Usage](#usage) instructions above
+
+### Creating a New Release
+
+A link to the latest release of Website Wizard's `.jar` file was already added to JOSM's external [PluginsSource](https://josm.openstreetmap.de/wiki/PluginsSource) (i.e. `https://github.com/High5Apps/josm-plugin-website-wizard/releases/latest/download/WebsiteWizard.jar`). So creating a new release on GitHub will automatically create a new release in JOSM. The PluginSource parser automatically runs every 10 minutes, at which time the new version will be available in JOSM. You may need to click **Download list** in JOSM's Plugin Preferences pane to refresh the list of plugins.
+
+To create a new GitHub release:
+1. `git tag v1.X.Y && git push origin v1.X.Y`
+2. Draft a [new release](https://github.com/High5Apps/josm-plugin-website-wizard/releases/new) on GitHub
+3. Drag-and-drop the new `.jar` file from `dist/WebsiteWizard.jar` onto the new release page to attach it to the new release
+4. Click **Publish release**
