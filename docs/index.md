@@ -77,7 +77,7 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 [![JOSM's Upload panel with our changeset's info](assets/images/blog-post/upload-panel.png)](assets/images/blog-post/upload-panel.png)
 
 1. Press `Ctrl+Shift+↑` (or `⌘+Shift+↑` on Mac) to open the [Upload](https://josm.openstreetmap.de/wiki/Help/Action/Upload) dialog
-2. Type `Add website for <city and/or neighborhood> shops and amenities` in the text field labeled **Provide a brief comment...**
+2. Type `Add website to <city and/or neighborhood> shops and amenities` in the text field labeled **Provide a brief comment...**
 3. Select `survey` in the dropdown labeled **Specify the data source...**
 4. Click **Upload Changes**, which will open OSM in your browser
 5. Enter your OSM credentials
