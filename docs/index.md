@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Make Your First Contribution to OpenStreetMap in The Next 15 Minutes
+title: Make Your First Contribution to OpenStreetMap in the Next 15 Minutes
 description: Website Wizard JOSM Plugin
 ---
 
@@ -29,7 +29,7 @@ Got your stopwatch out? Ready, set, go!
 1. Press `F12` (or `⌘+,` on Mac) to open JOSM's [Preferences](https://josm.openstreetmap.de/wiki/Help/Action/Preferences) dialog
 2. Click the **🧩 puzzle piece** icon on the left side of the window to open the [Plugins](https://josm.openstreetmap.de/wiki/Help/Preferences/Plugins) config
 3. Click **⬇️ Download list**
-4. Scroll down the plugins list until you see the [🌐 WebsiteWizard plugin](https://github.com/High5Apps/josm-plugin-website-wizard)
+4. Scroll down the plugins list until you see the [**🌐 WebsiteWizard plugin**](https://github.com/High5Apps/josm-plugin-website-wizard)
 5. Check its checkbox
 6. Click **OK** to install it
 
@@ -51,7 +51,7 @@ Got your stopwatch out? Ready, set, go!
 
 Now we'll filter the OSM data to only show shops and amenities that don't have a website.
 
-1. On the right side of the screen, find the [Filter](https://josm.openstreetmap.de/wiki/Help/Dialog/Filter) panel
+1. On the right side of the screen, find the [**Filter**](https://josm.openstreetmap.de/wiki/Help/Dialog/Filter) panel
 2. Click the ➕ icon to open the New Filter dialog
 3. Copy/paste the following query into the **Search string** text field
     ```
@@ -60,11 +60,11 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 4. Click **Submit filter**
 5. In the filter panel, check **E**, uncheck **H**, and check **I**. You should now only see the relevant places in your AOI.
 
-## 6. Search For an Official Website
+## 6. Search for an Official Website
 
 [![Website Wizard demo search in the JOSM editor](assets/images/blog-post/website-wizard-search.png)](assets/images/blog-post/website-wizard-search.png)
 
-1. On the bottom right side of the screen, find the 🌐 Website Wizard panel
+1. On the bottom right side of the screen, find the **🌐 Website Wizard** panel
 2. Type your AOI's city and/or neighborhood into Website Wizard's **Search Prefix** text field
 3. Click a shop or amenity in your AOI
 4. Click **Search** to open DuckDuckGo in your default browser
@@ -72,7 +72,7 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 6. If you found an official website, copy/paste its URL into the **Website URL** text field. If you didn't, repeat steps 3 to 5 with another place in your AOI.
 7. Click **Save**. If you make a mistake, you can always press `ctrl+z` (`⌘+z` on Mac) to undo it.
 
-## 7. Upload your changeset
+## 7. Upload Your Changeset
 
 [![JOSM's Upload panel with our changeset's info](assets/images/blog-post/upload-panel.png)](assets/images/blog-post/upload-panel.png)
 
