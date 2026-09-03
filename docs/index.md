@@ -8,21 +8,21 @@ description: Website Wizard JOSM Plugin
 
 This quick tutorial will help you make a meaningful contribution to [OpenStreetMap](https://www.openstreetmap.org) (OSM) in less than 15 minutes. By the end, you will have added an official [`website` tag](https://wiki.openstreetmap.org/wiki/Key:website) to a nearby shop or amenity. Soon after, your contribution will be ingested into dozens of free [OSM-based services](https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services), helping people worldwide.
 
-Why a `website` tag? Once a place in OSM has a `website` tag, it becomes way easier to determine other helpful info about that place! Nearly every place's official website has info about its [`phone`](https://wiki.openstreetmap.org/wiki/Key:phone), [`opening_hours`](https://wiki.openstreetmap.org/wiki/Key:opening_hours), [`email`](https://wiki.openstreetmap.org/wiki/Key:email), and [other tags](https://taginfo.openstreetmap.org/). So adding a `website` is a great place to get started.
+Why a `website` tag? Once a place in OSM has a `website` tag, it becomes way easier to determine other helpful info about that place! Nearly every place's official website has info about its [`phone`](https://wiki.openstreetmap.org/wiki/Key:phone), [`opening_hours`](https://wiki.openstreetmap.org/wiki/Key:opening_hours), [`email`](https://wiki.openstreetmap.org/wiki/Key:email), and [other tags](https://taginfo.openstreetmap.org/). So adding a `website` tag is a great place to get started.
 
 Got your stopwatch out? Ready, set, go!
 
 ## 1. Create an OSM account
 
-[Sign up](https://www.openstreetmap.org/user/new) for a free OSM account, and then confirm your email.
+[Sign up](https://www.openstreetmap.org/user/new) for a free OSM account and then confirm your email.
 
 ## 2. Download and Run JOSM
 
-[Download JOSM](https://josm.eu/wiki/Download) (~365 MB) for your specific operating system, and then run it.
+[Download JOSM](https://josm.eu/wiki/Download) (~365 MB) for your specific operating system and then run it.
 
 [JOSM](https://josm.openstreetmap.de), the Java OSM editor app, is a powerful tool for querying and editing OSM data. While simpler in-browser editors exist, JOSM offers [plugins](https://josm.openstreetmap.de/wiki/Plugins) that make your edit as quick and easy as possible.
 
-## 3. Set Up the 🌐 Website Wizard Plugin
+## 3. Set Up the Website Wizard Plugin
 
 [![The Plugins panel in JOSM's Preferences panel](assets/images/blog-post/plugin-preferences.png)](assets/images/blog-post/plugin-preferences.png)
 
@@ -52,7 +52,7 @@ Got your stopwatch out? Ready, set, go!
 Now we'll filter the OSM data to only show shops and amenities that don't have a website.
 
 1. Find the [**Filter**](https://josm.openstreetmap.de/wiki/Help/Dialog/Filter) panel on the right side of the screen
-2. Click the ➕ icon to open the New Filter dialog
+2. Click the **+** icon to open the Filter dialog
 3. Copy/paste the following query into the **Search string** text field
     ```
     name=* ((amenity=* "addr:housenumber"=*) | (shop=*)) -website=* -"contact:website"=*
@@ -90,7 +90,7 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 
 So what next?
 
-You could keep going and add a website to every place in your AOI. For example, I used Website Wizard to quickly add 66 new websites in Seattle's Wallingford neighborhood in [this changeset](https://www.openstreetmap.org/changeset/187858343).
+You could keep going and add a `website` tag to every place in your AOI. For example, I used Website Wizard to quickly add 66 new `website` tags in Seattle's Wallingford neighborhood in [this changeset](https://www.openstreetmap.org/changeset/187858343).
 
 Or you could modify the filter to show places in your AOI with a `website` tag but no `phone` tag. Then you could add the `phone` tag based on info from the website.
 
