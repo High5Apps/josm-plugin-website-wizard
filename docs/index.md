@@ -22,18 +22,7 @@ Got your stopwatch out? Ready, set, go!
 
 [JOSM](https://josm.openstreetmap.de), the Java OSM editor app, is a powerful tool for querying and editing OSM data. While simpler in-browser editors exist, JOSM offers [plugins](https://josm.openstreetmap.de/wiki/Plugins) that make your edit as quick and easy as possible.
 
-## 3. Set Up the Website Wizard Plugin
-
-[![The Plugins panel in JOSM's Preferences panel](assets/images/blog-post/plugin-preferences.png)](assets/images/blog-post/plugin-preferences.png)
-
-1. Press `F12` (or `⌘+,` on Mac) to open JOSM's [Preferences](https://josm.openstreetmap.de/wiki/Help/Action/Preferences) dialog
-2. Click the **🧩 puzzle piece** icon on the left side to open the [Plugins](https://josm.openstreetmap.de/wiki/Help/Preferences/Plugins) config
-3. Click **⬇️ Download list**
-4. Scroll down the list of plugins until you see [**🌐 WebsiteWizard**](https://github.com/High5Apps/josm-plugin-website-wizard)
-5. Check its checkbox
-6. Click **OK** to install it
-
-## 4. Download OSM Data
+## 3. Download OSM Data
 
 [![JOSM's Download panel with an area of interest selected](assets/images/blog-post/download-panel.png)](assets/images/blog-post/download-panel.png)
 
@@ -43,7 +32,7 @@ Got your stopwatch out? Ready, set, go!
 4. Click and drag to create a box around your AOI
 5. Click **⬇️ Download**. If this fails, your AOI was probably too large. Choose a smaller AOI and try again.
 
-## 5. Filter Irrelevant OSM Data
+## 4. Filter Irrelevant OSM Data
 
 [![Unfiltered OpenStreetMap data for an area of interest](assets/images/blog-post/unfiltered-aoi.png)](assets/images/blog-post/unfiltered-aoi.png)
 
@@ -60,11 +49,22 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 4. Click **Submit filter**
 5. Check **E**, uncheck **H**, and check **I** in the Filter panel. You should now only see the relevant places in your AOI.
 
+## 5. Set Up the Website Wizard Plugin
+
+[![The Plugins panel in JOSM's Preferences panel](assets/images/blog-post/plugin-preferences.png)](assets/images/blog-post/plugin-preferences.png)
+
+1. Press `F12` (or `⌘+,` on Mac) to open JOSM's [Preferences](https://josm.openstreetmap.de/wiki/Help/Action/Preferences) dialog
+2. Click the **🧩 puzzle piece** icon on the left side to open the [Plugins](https://josm.openstreetmap.de/wiki/Help/Preferences/Plugins) config
+3. Click **⬇️ Download list**
+4. Scroll down the list of plugins until you see [**🌐 WebsiteWizard**](https://github.com/High5Apps/josm-plugin-website-wizard)
+5. Check its checkbox
+6. Click **OK** to install it
+
 ## 6. Search for an Official Website
 
 [![Website Wizard demo search in the JOSM editor](assets/images/blog-post/website-wizard-search.png)](assets/images/blog-post/website-wizard-search.png)
 
-1. Find the **🌐 Website Wizard** panel on the bottom right side of the screen
+1. Click the 🌐 icon on the left side of the screen to show the **🌐 Website Wizard** panel on the right side of the screen
 2. Type your AOI's city and/or neighborhood into Website Wizard's **Search Prefix** text field
 3. Click a shop or amenity in your AOI
 4. Click **Search** to open [DuckDuckGo](https://duckduckgo.com/) in your default browser with the query autofilled as the Search Prefix + the place's name
