@@ -27,7 +27,7 @@ Got your stopwatch out? Ready, set, go!
 [![The Plugins panel in JOSM's Preferences panel](assets/images/blog-post/plugin-preferences.png)](assets/images/blog-post/plugin-preferences.png)
 
 1. Press `F12` (or `⌘+,` on Mac) to open JOSM's [Preferences](https://josm.openstreetmap.de/wiki/Help/Action/Preferences) dialog
-2. Click the **🧩 puzzle piece** icon on the left side of the window to open the [Plugins](https://josm.openstreetmap.de/wiki/Help/Preferences/Plugins) config
+2. Click the **🧩 puzzle piece** icon on the left side to open the [Plugins](https://josm.openstreetmap.de/wiki/Help/Preferences/Plugins) config
 3. Click **⬇️ Download list**
 4. Scroll down the list of plugins until you see [**🌐 WebsiteWizard**](https://github.com/High5Apps/josm-plugin-website-wizard)
 5. Check its checkbox
@@ -67,9 +67,9 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 1. Find the **🌐 Website Wizard** panel on the bottom right side of the screen
 2. Type your AOI's city and/or neighborhood into Website Wizard's **Search Prefix** text field
 3. Click a shop or amenity in your AOI
-4. Click **Search** to open [DuckDuckGo](https://duckduckgo.com/) in your default browser
-5. Determine if any of the search results represent the *official* website for your place. Do NOT use search results for social media profiles, review sites, or other business aggregators. When in doubt, default to not using it.
-6. Copy/paste the *official* website URL into the **Website URL** text field. If you didn't find one, repeat steps 3 to 5 with another place in your AOI.
+4. Click **Search** to open [DuckDuckGo](https://duckduckgo.com/) in your default browser with the query autofilled as the Search Prefix + the place's name
+5. Determine if any of the search results represent the *official* website for your place. Do NOT use search results for social media profiles, review sites, or other business aggregators. When in doubt, don't use it. If you don't find one, just repeat steps 3 to 5 with another place in your AOI.
+6. Copy/paste the *official* website URL into the **Website URL** text field
 7. Click **Save**. If you make a mistake, you can always press `ctrl+z` (`⌘+z` on Mac) to undo it.
 
 ## 7. Upload Your Changeset
@@ -90,10 +90,10 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 
 So what next?
 
-You could keep going and add a `website` tag to every place in your AOI. For example, I used Website Wizard to quickly add 66 new `website` tags in Seattle's Wallingford neighborhood in [this changeset](https://www.openstreetmap.org/changeset/187858343).
+You could keep going and add a `website` tag to every place in your AOI. For example, I quickly added 66 new `website` tags in Seattle's Wallingford neighborhood in [this changeset](https://www.openstreetmap.org/changeset/187858343).
 
 Or you could modify the filter to show places in your AOI with a `website` tag but no `phone` tag. Then you could add the `phone` tag based on info from the website.
 
 Or you could spread the word about OSM and Website Wizard! The United States alone has more than 1 million shops. So if we want to put them all on the map, we'll need to get many more people to help.
 
-No matter your next step, feel proud for pushing OSM a little closer toward becoming the world's greatest map!
+No matter what's next, feel proud for pushing OSM a little closer toward becoming the world's greatest map!
