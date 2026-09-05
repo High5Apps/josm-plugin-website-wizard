@@ -32,7 +32,7 @@ The United States alone has more than 1 million shops! So if we want to put them
 6. In the **filter panel** on the right side of JOSM, click the **+ button** 
 7. Copy and paste the following into the **Search string** text field, and then click **Submit filter**
 ```
-name=* ((amenity=* "addr:housenumber"=*) | (shop=*)) -website=* -"contact:website"=*
+name=* ((amenity=* "addr:housenumber"=*) | shop=*) -website=* -"contact:website"=*
 ```
 8. In the **filter panel**, check **E**, uncheck **H** and check **I**
 9. In the Website Wizard panel's **Search Prefix** text field, type the city name and/or neighborhood name for your area of interest.

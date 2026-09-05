@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Make Your First Contribution to OpenStreetMap in the Next 15 Minutes
+title: Make Your First Edit to OpenStreetMap in the Next 15 Minutes
 description: Website Wizard JOSM Plugin
 ---
 
@@ -8,7 +8,7 @@ description: Website Wizard JOSM Plugin
 
 This quick tutorial will help you make a meaningful contribution to [OpenStreetMap](https://www.openstreetmap.org) (OSM) in less than 15 minutes. By the end, you will have added an official [`website` tag](https://wiki.openstreetmap.org/wiki/Key:website) to a nearby shop or amenity. Soon after, your contribution will be ingested into dozens of free [OSM-based services](https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services), helping people worldwide.
 
-Why a `website` tag? Once a place in OSM has a `website` tag, it becomes way easier to determine other helpful info about that place! Nearly every place's official website has info about its [`phone`](https://wiki.openstreetmap.org/wiki/Key:phone), [`opening_hours`](https://wiki.openstreetmap.org/wiki/Key:opening_hours), [`email`](https://wiki.openstreetmap.org/wiki/Key:email), and [other tags](https://taginfo.openstreetmap.org/). So adding a `website` tag is a great place to get started.
+Why a `website` tag? Once a place in OSM has a `website` tag, it becomes way easier to determine other helpful info about that place. Nearly every place's official website has info about its [`phone`](https://wiki.openstreetmap.org/wiki/Key:phone), [`opening_hours`](https://wiki.openstreetmap.org/wiki/Key:opening_hours), [`email`](https://wiki.openstreetmap.org/wiki/Key:email), and [other tags](https://taginfo.openstreetmap.org/). So adding a `website` tag is a great place to get started.
 
 Got your stopwatch out? Ready, set, go!
 
@@ -44,7 +44,7 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 2. Click the **+** icon to open the Filter dialog
 3. Copy/paste the following query into the **Search string** text field
     ```
-    name=* ((amenity=* "addr:housenumber"=*) | (shop=*)) -website=* -"contact:website"=*
+    name=* ((amenity=* "addr:housenumber"=*) | shop=*) -website=* -"contact:website"=*
     ```
 4. Click **Submit filter**
 5. Check **E**, uncheck **H**, and check **I** in the Filter panel. You should now only see the relevant places in your AOI.
