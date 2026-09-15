@@ -4,6 +4,8 @@ title: Make Your First Edit to OpenStreetMap in the Next 15 Minutes
 description: Website Wizard JOSM Plugin
 ---
 
+*This was written for the tech-savvy audience on [Hacker News](https://news.ycombinator.com/item?id=49674050). For a simpler alternative, try [StreetComplete](https://streetcomplete.app/) on Android or [Go Map!!](https://apps.apple.com/app/id592990211) on iOS.*
+
 ## Intro
 
 This quick tutorial will help you make a meaningful contribution to [OpenStreetMap](https://www.openstreetmap.org) (OSM) in less than 15 minutes. By the end, you will have added an official [`website` tag](https://wiki.openstreetmap.org/wiki/Key:website) to a nearby shop or amenity. Soon after, your contribution will be ingested into dozens of free [OSM-based services](https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services), helping people worldwide.
@@ -68,7 +70,7 @@ Now we'll filter the OSM data to only show shops and amenities that don't have a
 2. Type your AOI's city and/or neighborhood into Website Wizard's **Search Prefix** text field
 3. Click a shop or amenity in your AOI
 4. Click **Search** to open [DuckDuckGo](https://duckduckgo.com/) in your default browser with the query autofilled as the Search Prefix + the place's name
-5. Determine if any of the search results represent the *official* website for your place. Do NOT use search results for social media profiles, review sites, or other business aggregators. When in doubt, don't use it. If you don't find one, just repeat steps 3 to 5 with another place in your AOI.
+5. Determine if any of the search results represent the *official* website for your place. An *official* website usually has a personalized domain (e.g. <https://eatcafelolo.com>), and it's always put up by the place's supervisor (e.g. Cafe Lolo's owners). Do NOT use search results for social media profiles, review sites, or other business aggregators, since those fit better under another tag (e.g. [`contact:facebook`](https://wiki.openstreetmap.org/wiki/Key:contact:facebook)). When in doubt, don't use it. If you don't find one, just repeat steps 3 to 5 with another place in your AOI.
 6. Copy/paste the *official* website URL into the **Website URL** text field
 7. Click **Save**. If you make a mistake, you can always press `ctrl+z` (`⌘+z` on Mac) to undo it.
 
