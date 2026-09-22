@@ -22,7 +22,7 @@ Got your stopwatch out? Ready, set, go!
 
 [Download JOSM](https://josm.eu/wiki/Download) (~365 MB) for your specific operating system and then run it. [JOSM](https://josm.openstreetmap.de), the Java OSM editor, is a powerful tool for querying and editing OSM data.
 
-Some mappers would recommend [iD](https://www.openstreetmap.org/edit?editor=id) over JOSM for this "simple" task. But using JOSM's [filter](https://josm.openstreetmap.de/wiki/Help/Dialog/Filter) to find places without a `website` tag is far more efficient than randomly clicking around iD. Plus JOSM's [plugins](https://josm.openstreetmap.de/wiki/Plugins) make it a breeze to search for a website and tag it. These advantages are unbeatable whether you're adding your first tag or trying to efficiently tag a whole neighborhood.
+Some mappers would recommend an in-browser editor like [iD](https://www.openstreetmap.org/edit?editor=id) for this "simple" task. But using JOSM's [filter](https://josm.openstreetmap.de/wiki/Help/Dialog/Filter) to find places without a `website` tag is far more efficient than randomly clicking around iD. Plus JOSM's [plugins](https://josm.openstreetmap.de/wiki/Plugins) make it a breeze to search for a website and tag it. These advantages are unbeatable whether you're adding your first tag or trying to efficiently tag a whole neighborhood.
 
 ## 3. Download OSM Data
 
