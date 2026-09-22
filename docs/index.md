@@ -10,7 +10,7 @@ description: Website Wizard JOSM Plugin
 
 This quick tutorial will help you make a meaningful contribution to [OpenStreetMap](https://www.openstreetmap.org) (OSM) in less than 15 minutes. By the end, you will have added an official [`website` tag](https://wiki.openstreetmap.org/wiki/Key:website) to a nearby shop or amenity. Soon after, your contribution will be ingested into dozens of free [OSM-based services](https://wiki.openstreetmap.org/wiki/List_of_OSM-based_services), helping people worldwide.
 
-Why a `website` tag? Once a place in OSM has a `website` tag, it becomes way easier to determine other helpful info about that place. Nearly every place's official website has info about its [`phone`](https://wiki.openstreetmap.org/wiki/Key:phone), [`opening_hours`](https://wiki.openstreetmap.org/wiki/Key:opening_hours), [`email`](https://wiki.openstreetmap.org/wiki/Key:email), and [other tags](https://taginfo.openstreetmap.org/). So adding a `website` tag is a great place to get started.
+Why a `website` tag? Once a place in OSM has a `website` tag, it becomes much easier to determine other helpful info about that place. Nearly every place's official website has info about its [`phone`](https://wiki.openstreetmap.org/wiki/Key:phone), [`opening_hours`](https://wiki.openstreetmap.org/wiki/Key:opening_hours), [`email`](https://wiki.openstreetmap.org/wiki/Key:email), and [other tags](https://taginfo.openstreetmap.org/). So adding a `website` tag is a great place to get started.
 
 Got your stopwatch out? Ready, set, go!
 
@@ -20,9 +20,9 @@ Got your stopwatch out? Ready, set, go!
 
 ## 2. Download and Run JOSM
 
-[Download JOSM](https://josm.eu/wiki/Download) (~365 MB) for your specific operating system and then run it.
+[Download JOSM](https://josm.eu/wiki/Download) (~365 MB) for your specific operating system and then run it. [JOSM](https://josm.openstreetmap.de), the Java OSM editor, is a powerful tool for querying and editing OSM data.
 
-[JOSM](https://josm.openstreetmap.de), the Java OSM editor app, is a powerful tool for querying and editing OSM data. While simpler in-browser editors exist, JOSM offers [plugins](https://josm.openstreetmap.de/wiki/Plugins) that make your edit as quick and easy as possible.
+Some mappers would recommend [iD](https://www.openstreetmap.org/edit?editor=id) over JOSM for this "simple" task. But using JOSM's [filter](https://josm.openstreetmap.de/wiki/Help/Dialog/Filter) to find places without a `website` tag is far more efficient than randomly clicking around iD. Plus JOSM's [plugins](https://josm.openstreetmap.de/wiki/Plugins) make it a breeze to search for a website and tag it. These advantages are unbeatable whether you're adding your first tag or trying to efficiently tag a whole neighborhood.
 
 ## 3. Download OSM Data
 
@@ -42,7 +42,7 @@ Got your stopwatch out? Ready, set, go!
 
 Now we'll filter the OSM data to only show shops and amenities that don't have a website.
 
-1. Find the [**Filter**](https://josm.openstreetmap.de/wiki/Help/Dialog/Filter) panel on the right side of the screen
+1. Find the **Filter** panel on the right side of the screen
 2. Click the **+** icon to open the Filter dialog
 3. Copy/paste the following query into the **Search string** text field
     ```
