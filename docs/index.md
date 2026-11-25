@@ -4,7 +4,7 @@ title: Make Your First Edit to OpenStreetMap in the Next 15 Minutes
 description: Website Wizard JOSM Plugin
 ---
 
-*This was written for the tech-savvy audience on [Hacker News](https://news.ycombinator.com/item?id=49674050). For a simpler alternative, try [StreetComplete](https://streetcomplete.app/) on Android or [Go Map!!](https://apps.apple.com/app/id592990211) on iOS.*
+*This was written for the tech-savvy audience on [Hacker News](https://news.ycombinator.com/item?id=49674050). For a simpler alternative, try [StreetComplete](https://streetcomplete.app/) on Android or iOS.*
 
 ## Intro
 
